@@ -1,9 +1,7 @@
-#!/bin/sh
 echo "run sudo raspi-config and expand FS"
 echo "OpenCV Version"
 read cvver
-su
-sudo apt-get update && sudo apt-get upgrade -y
+#sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install build-essential cmake pkg-config -y
 sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev -y
 sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev -y
