@@ -12,6 +12,4 @@ sudo apt-get autoremove -y
 echo "Installing gedit"
 sudo apt-get install gedit
 df -h
-su
-read s
-reboot
+sudo reboot
