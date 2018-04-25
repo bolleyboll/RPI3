@@ -1,6 +1,7 @@
 echo "Removing Useless Packages..."
 
-sudo apt-get purge wolfram-engine libreoffice* geany scratch* scratch2 greenfoot nodered claws-mail claws-mail-i18n minecraft-pi python-pygame -y
+sudo apt-get update
+sudo apt-get purge wolfram-engine libreoffice* geany scratch* scratch2 python2.7 debian-reference-en dillo netsurf-gtk raspberrypi-artwork greenfoot nodered claws-mail claws-mail-i18n minecraft-pi python-pygame -y
 
 echo "Removing PyGames"
 sudo rm -R /home/pi/python_games
