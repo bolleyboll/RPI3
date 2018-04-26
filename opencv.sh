@@ -20,7 +20,7 @@ unzip opencv_contrib.zip
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo python3 get-pip.py
-sudo pip install virtualenv virtualenvwrapper -y
+sudo pip install virtualenv virtualenvwrapper
 sudo rm -rf ~/.cache/pip
 
 echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
@@ -37,9 +37,9 @@ source ~/.profile
 workon cv
 
 cd ~/opencv-$cvver/
-$ mkdir build
-$ cd build
-$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D CMAKE_INSTALL_PREFIX=/usr/local \
     -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-$cvver/modules \
     -D ENABLE_NEON=ON \
